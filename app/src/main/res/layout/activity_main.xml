@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/airmode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/airplane_mode"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"/>
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="300dp"
+            app:layout_constraintHorizontal_bias="0.80"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/airmode"
+            app:layout_constraintTop_toTopOf="@id/airmode"
+            app:layout_constraintBottom_toBottomOf="@id/airmode"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/datamode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data_mode"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"/>
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingLeft="300dp"
+                app:layout_constraintHorizontal_bias="0.80"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/datamode"
+                app:layout_constraintTop_toTopOf="@id/datamode"
+                app:layout_constraintBottom_toBottomOf="@id/datamode"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/bluetoothmode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bluetooth_mode"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"/>
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingLeft="300dp"
+                app:layout_constraintHorizontal_bias="0.80"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/bluetoothmode"
+                app:layout_constraintTop_toTopOf="@id/bluetoothmode"
+                app:layout_constraintBottom_toBottomOf="@id/bluetoothmode"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.10"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.50">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/powermode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/power_mode"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"/>
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingLeft="300dp"
+                app:layout_constraintHorizontal_bias="0.80"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/powermode"
+                app:layout_constraintTop_toTopOf="@id/powermode"
+                app:layout_constraintBottom_toBottomOf="@id/powermode"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

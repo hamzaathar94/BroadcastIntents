@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BroadcastIntents</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="status">Status</string>
+    <string name="data">Data</string>
+    <string name="power">Power</string>
+    <string name="boot">Boot</string>
+    <string name="airplane">Airplane</string>
+    <string name="airplane_mode">Airplane Mode</string>
+    <string name="data_mode">Data Mode</string>
+    <string name="bluetooth_mode">Bluetooth Mode</string>
+    <string name="power_mode">Power Mode</string>
+</resources>
